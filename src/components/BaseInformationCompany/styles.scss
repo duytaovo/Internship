@@ -1,0 +1,210 @@
+@use "../../assets/styles/" as *;
+
+.base__information-candidate {
+  .company-name {
+    // text-align: center;
+    width: auto;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 33px;
+    color: rgb(53, 53, 53);
+    line-height: 35.2px;
+    display: -webkit-box;
+    // line-height: 1.3;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .base__information-card {
+    // background-color: $primary-color-background;
+    background-color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 6px;
+    padding-bottom: 1rem;
+
+    // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    .img-logo {
+      width: 100px;
+      height: 80px;
+      border-radius: 4px;
+      margin-left: 14px;
+      // margin-right: 23px;
+      // transform: translate(-30px, 30px);
+      box-sizing: border-box;
+      margin-top: 16px;
+      opacity: 1;
+    }
+
+    &-detail {
+      // margin: $mg-1;
+      width: fit-content;
+      height: fit-content;
+      div {
+        @include flex(center, null);
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        display: flex;
+        align-items: center;
+
+        color: #000000;
+      }
+      p {
+        padding-left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        display: flex;
+        align-items: center;
+      }
+      a {
+        padding-left: 5px;
+        color: #757575;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px !important;
+        line-height: 27px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+      }
+
+      a:hover {
+        color: $primary-color;
+      }
+      h5 {
+        // transform: translateY(5px);
+        display: flex;
+        align-items: center;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.intro__company {
+  &-title {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-left: 7px;
+
+    &-appling {
+      margin-bottom: 14px;
+    }
+  }
+
+  &-detail {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.button-card {
+  @include flex(center, space-around);
+  margin-top: 26px;
+}
+
+.base__information-card-detail-location-candidate {
+  h5 {
+    white-space: nowrap;
+    margin-bottom: 15px;
+  }
+  align-items: inherit !important;
+}
+
+.appreciate {
+  // margin: 5px 0px 10px 0px;
+  @include flex(start, space-between);
+
+  img {
+    width: 35px;
+    height: 35px;
+    margin-right: 16px;
+    border-radius: 50%;
+    margin-top: 4px;
+  }
+}
+
+.company-job-detail__card {
+  display: grid;
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, 230px);
+  justify-content: flex-start;
+}
+
+.job-applying-container {
+  width: 100%;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 705px) {
+  .company-job-detail__card {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.detail-website {
+  display: block !important;
+}
+.fix-fontSize {
+  font-size: 17px !important;
+}
+
+.fix__margin {
+  margin-bottom: 4px;
+}
+.css-1q7v9b9-MuiGrid-root > .MuiGrid-item {
+  padding-left: 0 !important;
+}
+
+.fix__margin {
+  .fix_container {
+    .icon_fix {
+      margin-top: 1px;
+      font-size: 20px;
+    }
+    align-items: flex-start !important;
+    a {
+      text-align: center;
+      color: #000000 !important;
+    }
+  }
+}

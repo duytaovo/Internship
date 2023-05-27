@@ -1,0 +1,17 @@
+@use "../../../../assets/styles/Helper/variables" as *;
+
+.information-company__container {
+  width: 100%;
+  // border: 1px solid $primary-color-2;
+  padding: 0 30px;
+  // border-radius: 8px;
+  margin-bottom: 10px;
+}
+.intro__company-title {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.css-3kx1k-MuiGrid-root > .MuiGrid-item {
+  padding-left: 0 !important;
+}

@@ -1,0 +1,244 @@
+@use "../../../assets/styles/index.scss" as *;
+
+.form__container {
+  margin: auto;
+  padding: 30px;
+  width: 60%;
+  background-color: $color-white-0;
+  border: 0.5px solid #dedede;
+}
+
+.partner-post {
+  &__container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    height: max-content;
+    margin-top: 80px;
+    margin-bottom: 200px;
+
+    .custom-input .custom-input__textfield input {
+      font-family: "Public Sans", sans-serif;
+      border: 1.6px solid #666;
+      border-radius: 2px;
+      width: 100%;
+      padding: 21px 12px;
+      color: #444444;
+
+      &:hover {
+        border: 1.6px solid $primary-color;
+        box-shadow: $primary-color-1 0 3px 8px;
+      }
+    }
+
+    .custom-input .custom-input__textfield textarea {
+      font-family: "Public Sans", sans-serif;
+      border: 1.6px solid #666 !important;
+      border-radius: 2px;
+      width: 100%;
+      padding: 20px 12px;
+
+      &:hover {
+        border: 1.6px solid $primary-color;
+        box-shadow: $primary-color-1 0 3px 8px;
+      }
+    }
+  }
+
+  &__form {
+    margin: auto;
+    background-color: $color-white-0;
+    width: 80%;
+
+    .row-3-col {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 35px;
+
+      .partner-post__select-location {
+        flex-basis: 32%;
+      }
+
+      div.custom-input {
+        margin-top: 0;
+        flex-basis: 28%;
+
+        input {
+          height: 45px !important;
+        }
+      }
+
+      > .custom-input {
+        margin: 0;
+      }
+    }
+
+    .partner-post-title {
+      margin-bottom: 35px;
+    }
+
+    .row-2-col {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 35px;
+
+      > .partner-post__select {
+        flex-basis: 49%;
+      }
+
+      > div.custom-input {
+        flex-basis: 49%;
+        margin: 0 !important;
+
+        input {
+          height: 45px;
+        }
+      }
+    }
+
+    .partner-post__select {
+      flex-basis: 33.33%;
+
+      > .custom-input {
+        margin: 0 0 35px 0;
+      }
+    }
+
+    .partner-post__textarea {
+      margin: 25px 0px;
+
+      textarea {
+        font-family: "Public Sans", sans-serif;
+        border: 1.6px solid #666;
+        border-radius: 2px;
+        height: 150px;
+      }
+    }
+
+    .partner-post__action {
+      display: flex;
+      justify-content: right;
+    }
+  }
+
+  &__heading {
+    display: flex;
+
+    & svg,
+    h2 {
+      color: $primary-color;
+    }
+  }
+
+  &__heading {
+    margin-top: 25px;
+  }
+
+  &__salary-range {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .custom-input {
+      width: 49%;
+      margin: 0;
+
+      &__textfield {
+        input {
+          height: 45px;
+        }
+      }
+    }
+  }
+  .custom-select__textfield {
+    margin-top: 7px;
+  }
+}
+
+.partner-post__sub-description {
+  margin-top: 2px;
+  font-size: 12px;
+  font-style: italic;
+  color: #999;
+}
+
+input#title {
+  height: 20px;
+}
+
+label {
+  font-family: "Public Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #29303b;
+}
+
+.salary-select-field {
+  width: 100%;
+}
+
+.description-btn-post-partner {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: flex-end;
+  font-style: italic;
+  color: $primary-color;
+  float: right;
+
+  &:hover {
+    color: #000;
+    cursor: pointer;
+  }
+}
+
+.description-confirm-sample-btn {
+  &:hover {
+    color: $color-white-0;
+    background-color: $primary-color;
+    transition: 0.3s ease;
+  }
+}
+
+// Reponsive
+@media only screen and (min-width: 500px) and (max-width: 740px) {
+  .form__container {
+    width: 100%;
+  }
+  .partner-post {
+    &__form {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1260px) {
+  .form__container {
+    width: 80%;
+  }
+  .partner-post {
+    &__form {
+      width: 100%;
+    }
+  }
+  #max-salary {
+    margin-left: 35px;
+  }
+}
+
+.title-requirement {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 400;
+  text-align: right;
+  margin-top: 16px;
+}
+
+.field-requirment {
+  color: red;
+  font-weight: 700;
+  font-size: 16px;
+}

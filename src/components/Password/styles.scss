@@ -1,0 +1,35 @@
+@use "../../assets/styles/" as *;
+
+.password {
+  padding: 2rem;
+  display: flex;
+  width: 30% !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  background-color: $color-white-0;
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%), 0 5px 5px 0 rgb(0 0 0 / 24%);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  .password-form {
+    .passform {
+      width: 300px;
+    }
+  }
+  &-form {
+    @include flex(null, space-between);
+    padding-bottom: 20px;
+    img {
+      width: 280px;
+      height: 309px;
+      margin-top: 53px;
+      margin-right: 20px;
+      border-radius: 5px;
+    }
+  }
+}
+.button__change-password {
+  @include flex(null, space-between);
+  gap: 4px;
+}

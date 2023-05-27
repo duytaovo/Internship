@@ -1,0 +1,121 @@
+@use "../../assets/styles/" as *;
+
+.header__with-search-search {
+  display: flex;
+  flex-direction: row;
+  // gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border: 0.5px solid #dedede;
+  border-radius: 6px;
+  height: 66px;
+  margin-bottom: 24px;
+
+  .header__with-search-search-wrap {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    flex: 1;
+    .search__icon {
+      font-size: $fs-13;
+      color: $primary-color;
+    }
+
+    .header__with-search-search-1 {
+      font-family: inherit;
+      font-size: $fs-16;
+      color: black;
+      height: 37px;
+      border: none;
+      border-radius: 2px;
+      outline: none;
+      width: 100%;
+      flex : 1;
+      // width: 100px;
+      border-bottom: 1px solid $color-gray-2;
+    }
+  }
+
+  .header__with-search-search-select {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-start;
+
+    .select__icon-location {
+      color: $primary-color;
+    }
+
+    .select__icon-arrow-drop {
+      color: $primary-color;
+      transform: translateX(45px);
+    }
+  }
+
+  .header__with-search-button-search {
+    transform: translateX(-10px);
+  }
+
+  .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+    display: none;
+  }
+  // .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  //   padding-right: 10px;
+  // }
+}
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+  min-width: 180px !important;
+}
+
+@media (min-width: 1050px) {
+  .onDesktop {
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1070px) {
+  .header__with-search-search {
+    display: flex;
+  }
+}
+
+//tablet
+@media (min-width: 740px) and (max-width: 1050px) {
+  .onTablet {
+    // padding-left: 30px;
+  }
+  .header__with-search-search-1 {
+  }
+}
+@media (min-width: 1050px) and (max-width: 1200px) {
+  .onTablet {
+    padding-left: 15px;
+  }
+}
+//mobile
+@media (max-width: 740px) {
+  .onMobile {
+    padding-left: 30px;
+  }
+  .header__with-search-search-1 {
+    width: 100px !important;
+  }
+  .header__with-search-search-select-onMobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .header__with-search-search-select-onMobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__with-search-search-fix {
+    // display: none !important;
+  }
+}

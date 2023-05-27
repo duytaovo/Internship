@@ -1,0 +1,91 @@
+@use "../../assets/styles/" as *;
+
+.cardHome__container {
+  width: 100%;
+  background-color: $color-white-0;
+  border-radius: 10px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 18px 24px;
+  margin-bottom: 16px;
+  border: 1.5px solid #dedede;
+  cursor: pointer;
+
+  .cardHome__col1 {
+    width: 100%;
+    flex-basis: 65%;
+    display: flex;
+    flex-direction: column;
+
+    .cardHome__aboutCompany {
+      display: flex;
+
+      .cardHome__img {
+        width: 50px;
+        height: 50px;
+        margin-right: 16px;
+      }
+
+      .cardHome__title {
+        color: $primary-color;
+        display: -webkit-box;
+        font-size: 16px;
+        line-height: 1.3;
+        -webkit-line-clamp: 1; /* số dòng hiển thị */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .cardHome__nameCompany {
+        font-size: 12px;
+      }
+    }
+
+    .cardHome__tagName {
+      display: flex;
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+  }
+
+  .cardHome__col2 {
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .cardHome__col2-End {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 110%;
+
+      div {
+        display: flex;
+        align-items: center;
+
+        p {
+          font-size: 10px;
+          color: #626262;
+          font-family: "Open Sans";
+          font-style: normal;
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+}
+
+.cardHome__amount-hr-apply {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.cardHome__container.active {
+  border: 2px solid $primary-color;
+}

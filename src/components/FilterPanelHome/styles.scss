@@ -1,0 +1,41 @@
+@use '../../assets/styles/' as *;
+
+.filter-panel-home__wrapper {
+  width: 100%;
+  padding-left: 30px;
+
+  .filter-panel-home__filterPanel {
+    border-bottom: 1;
+    border-color: divider;
+    margin-bottom: 24px;
+    height: 66px;
+  }
+
+  .tabPanel {
+    height: 600px;
+    overflow-y: scroll;
+    border-radius: 6px;
+  }
+
+  .tabPanel::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 740px) {
+  .onMobile {
+    padding-left: 0px;
+  }
+  .slideBarHome__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .css-1eyyxxn-MuiList-root {
+    height: fit-content !important;
+  }
+  .filter-panel-home__wrapper {
+    padding: 0;
+  }
+}

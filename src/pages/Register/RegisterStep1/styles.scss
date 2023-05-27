@@ -1,0 +1,23 @@
+@use '../../../assets/styles/' as *;
+
+.register-step1 {
+  &__choices {
+    display: flex;
+    flex-direction: column;
+    width: 285px;
+    margin: 0 auto;
+    gap: 16px;
+    &--btn {
+      width: 285px;
+      display: flex;
+      flex: 1;
+      margin: 0 auto;
+    }
+  }
+  &__btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+}

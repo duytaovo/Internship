@@ -1,0 +1,28 @@
+@use "../../../assets/styles/" as *;
+
+.profile-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  .profile-form__content {
+    width: 100%;
+    .profile-form__content-item {
+      .custom-input .custom-input__textfield input {
+        padding: 8px 12px;
+      }
+    }
+  }
+}
+
+.MuiDialogContent-root.css-ypiqx9-MuiDialogContent-root {
+  // overflow-y: hidden;
+  .profile-form__action {
+    display: flex;
+    flex-direction: row;
+
+    .profile-form__action-btn {
+      padding: 8px 16px;
+    }
+  }
+}

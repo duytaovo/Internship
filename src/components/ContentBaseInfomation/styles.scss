@@ -1,0 +1,25 @@
+._scroll {
+  overflow-y: scroll;
+  height: 83vh;
+}
+
+._scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.css-ao1zg-MuiPaper-root,
+.css-6tql9i-MuiPaper-root,
+.css-yjvt9-MuiPaper-root,
+.css-1l61ybr-MuiPaper-root,
+.css-badz6b-MuiPaper-root {
+  border: 1.5px solid #dedede;
+}
+
+.css-ao1zg-MuiPaper-root {
+  overflow-y: scroll;
+  height: 26.3vh;
+}
+
+.css-ao1zg-MuiPaper-root::-webkit-scrollbar {
+  display: none;
+}

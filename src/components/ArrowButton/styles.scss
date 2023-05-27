@@ -1,0 +1,23 @@
+@use "../../assets/styles/" as *;
+.arrow-button {
+  @include button(
+    13px,
+    700,
+    12px,
+    32px,
+    transparent,
+    transparent,
+    $primary-color,
+    $primary-color
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  &:hover {
+    cursor: pointer;
+  }
+  &__icon {
+    font-size: $fs-16;
+  }
+}

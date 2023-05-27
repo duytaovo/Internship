@@ -1,0 +1,15 @@
+// mobile
+@media only screen and(max-width : 46.1875em ) {
+  .hr-post__wrapper {
+    .hr-post-list__content {
+      padding: 0 24px;
+      flex-direction: column;
+      .hr-post-list__statistic {
+        flex-basis: 100%;
+      }
+      .filter-panel-home__wrapper {
+        flex-basis: 100%;
+      }
+    }
+  }
+}

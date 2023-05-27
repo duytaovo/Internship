@@ -1,0 +1,38 @@
+@use "../../assets/styles" as *;
+
+.login-layout {
+  width: 100%;
+  min-height: 100vh;
+  height: max-content;
+  background-color: $primary-color;
+  // padding: 36px;
+  text-align: center;
+}
+
+.login-container-wrapper {
+  padding: 150px 0px;
+  background-color: $primary-color-background;
+}
+
+.login-container__modal {
+  &--content {
+    float: right;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 46.1875em) {
+  .dialog .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+    max-width: none !important;
+  }
+
+  .login-container__modal {
+    &--content {
+      float: none;
+      margin-top: 24px;
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

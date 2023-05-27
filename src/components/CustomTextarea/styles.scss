@@ -1,0 +1,62 @@
+@use '../../assets/styles/' as *;
+
+.custom-textarea {
+  .custom-textarea__label {
+    font-family: $f-family;
+    font-size: $fs-14;
+    font-weight: $fw-bold-0;
+    // margin-left: 5px;
+    color: #000;
+  }
+
+  .custom-textarea__textfield {
+    margin-top: 7px;
+    textarea {
+      font-family: $f-family;
+      border: 1.6px solid $primary-color;
+      border-radius: 2px;
+      width: 100%;
+      padding: 15px 12px;
+
+      &:hover {
+        border: 1.6px solid $primary-color;
+        box-shadow: $primary-color-1 0px 3px 8px;
+        &::placeholder {
+          color: $primary-color;
+        }
+      }
+
+      &:focus {
+        outline: $primary-color;
+        border: 1.6px solid $color-black-0;
+        box-shadow: $primary-color-1 0px 3px 8px;
+        &::placeholder {
+          color: $primary-color;
+        }
+      }
+      &::placeholder {
+        font-family: $f-family;
+      }
+    }
+    .custom-textarea__error {
+      color: $color-red;
+      font-size: $fs-13;
+    }
+  }
+}
+
+.custom-input__textarea-disabled {
+  margin-top: 7px;
+  // height: fit-content;
+  textarea {
+    // border: 2px solid rgb(145, 158, 171);
+    background-color: transparent;
+    font-family: $f-family;
+    border: none;
+    border-radius: 2px;
+    width: 100%;
+    color: #000;
+    // padding: 15px 12px;
+    font-size: $fs-16;
+  }
+}

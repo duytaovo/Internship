@@ -1,0 +1,23 @@
+@use '../../assets/styles' as *;
+
+.slideBarHome__wrapper {
+  overflow-y: scroll;
+  height: 690px;
+  border-radius: 6px;
+
+  .slideBarHome__container {
+    width: 100%;
+    background-color: $color-white-0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 18px;
+    margin-bottom: 20px;
+    border: 0.5px solid #dedede;
+  }
+}
+
+.slideBarHome__wrapper::-webkit-scrollbar {
+  display: none;
+}

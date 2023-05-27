@@ -1,0 +1,57 @@
+@use "../../assets/styles/" as *;
+
+.container {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+  background-color: #f6f6f6;
+  z-index: 99;
+  box-shadow: 0 2px 2px -2px gray;
+
+  .logo__home {
+    text-align: none;
+    color: black;
+  }
+  .login__home {
+    display: flex;
+    align-items: center;
+    text-align: none;
+    border-radius: 5px;
+
+    .login {
+      font-family: $f-family-0;
+      width: fit-content;
+      display: flex;
+      align-items: flex-end;
+      text-decoration: none;
+      color: $color-black-0;
+      margin-right: 18px;
+      margin-left: 10px;
+
+      h5 {
+        font-size: 16px;
+      }
+    }
+    .register {
+      // border-left: solid 1px black;
+    }
+  }
+}
+
+
+
+@media (max-width: 740px) {
+  .login__home {
+    margin-top: 10px;
+    display: block !important;
+    .login {
+      margin: 8px 0;
+    }
+  }
+}
+.config {
+  padding: 0px 20px;
+}

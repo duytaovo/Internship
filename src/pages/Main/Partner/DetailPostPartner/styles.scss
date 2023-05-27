@@ -1,0 +1,47 @@
+@use "../../../../assets/styles" as *;
+
+.config__arow-back {
+  display: flex;
+  color: $primary-color;
+  margin-top: 16px;
+  :hover {
+    color: $color-black-light;
+  }
+}
+.hide-on-desktop {
+  display: none;
+}
+// responsive detail_home
+
+@media (min-width: 740px) and (max-width: 1024px) {
+  .config__arow-back-ontablet {
+    display: flex;
+    color: $primary-color;
+    margin-top: 16px;
+    :hover {
+      color: $color-black-light;
+    }
+  }
+  .hide-on-table {
+    display: none;
+  }
+}
+
+@media (max-width: 740px) {
+  .config__arow-back-ontablet {
+    display: flex;
+    color: $primary-color;
+    margin-top: 16px;
+    :hover {
+      color: $color-black-light;
+    }
+  }
+  .hide-on-table {
+    display: none;
+  }
+}
+.css-480o17-MuiGrid-root {
+  margin-top: 0 !important;
+  width: auto !important;
+  margin-left: 0 !important;
+}

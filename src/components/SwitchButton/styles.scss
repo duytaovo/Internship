@@ -1,0 +1,19 @@
+@use '../../assets/styles' as *;
+
+.css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+  color: $primary-color !important;
+}
+
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked
+  + .MuiSwitch-track {
+  background-color: $primary-color !important;
+}
+
+.css-dmmspl-MuiFormGroup-root {
+  display: inline-block !important;
+}

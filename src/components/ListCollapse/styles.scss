@@ -1,0 +1,27 @@
+@use '../../assets/styles' as *;
+
+.listButton {
+  svg {
+    color: $primary-color;
+  }
+}
+
+.css-cveggr-MuiListItemIcon-root {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.css-j204z7-MuiFormControlLabel-root {
+  width: 100%;
+  margin: 0;
+}
+
+.css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root {
+  height: 65px !important;
+}
+
+.css-1eyyxxn-MuiList-root {
+  padding: 0 !important;
+  margin-bottom: 24px !important;
+}
